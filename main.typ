@@ -1,6 +1,5 @@
 #import "@preview/basic-resume:0.2.9": *
 
-// Put your personal information here, replacing mine
 #let name = "Stanli Ritche L. Regala"
 #let location = "Quezon City, Philippines"
 #let email = "stanliregala@gmail.com"
@@ -11,9 +10,6 @@
 
 #show: resume.with(
   author: name,
-  // All the lines below are optional.
-  // For example, if you want to to hide your phone number:
-  // feel free to comment those lines out and they will not show.
   location: location,
   email: email,
   github: github,
@@ -27,19 +23,6 @@
   personal-info-position: left,
 )
 
-/*
-* Lines that start with == are formatted into section headings
-* You can use the specific formatting functions if needed
-* The following formatting functions are listed below
-* #edu(dates: "", degree: "", gpa: "", institution: "", location: "", consistent: false)
-* #work(company: "", dates: "", location: "", title: "")
-* #project(dates: "", name: "", role: "", url: "")
-* certificates(name: "", issuer: "", url: "", date: "")
-* #extracurriculars(activity: "", dates: "")
-* There are also the following generic functions that don't apply any formatting
-* #generic-two-by-two(top-left: "", top-right: "", bottom-left: "", bottom-right: "")
-* #generic-one-by-two(left: "", right: "")
-*/
 == Education
 
 #edu(
@@ -47,9 +30,6 @@
   location: "Quezon City, Philippines",
   dates: dates-helper(start-date: "Mar 2021", end-date: "Jun 2025"),
   degree: "Bachelor of Science in Computer Engineering",
-
-  // Uncomment the line below if you want edu formatting to be consistent with everything else
-  // consistent: true
 )
 - GWA: 1.3672 | Magna Cum Laude
 - Relevant Coursework: Software Engineering and Programming Principles, Computer Networking, Computer Organization and Embedded Systems, Digital Logic Design, Signal and Systems, Integrated Circuit Design, Electric Power Systems, Advanced Circuit Analysis
@@ -70,8 +50,6 @@
 
 #project(
   name: "LazyJudge",
-  // Role is optional
-  // URL is also optional
   url: "https://github.com/Synere/LazyJudge_0.0.3",
 )
 - Developed a fully customizable modular legal analysis AI LLM pipeline which automates the process of legal research and analysis through document retrieval, summarization, and issue extraction modules
@@ -81,8 +59,6 @@
 
 #project(
   name: "Undergraduate Thesis: Galaxy Project Cross-organizational Tool",
-  // Role is optional
-  // URL is also optional
 )
 - Developed a extension for Galaxy project, a hosted scientific workflow management system, that enables cross-organizational workflow communication between different Galaxy instances, allowing researchers to leverage specialized computing infrastructure across institutions
 - Built using the XML-based Galaxy Tool extension format, Python, and Bash
@@ -90,8 +66,6 @@
 
 #project(
   name: "JudgeTTS",
-  // Role is optional
-  // URL is also optional
   url: "github.com/Synere/piper-tts-webapp",
 )
 - Developed a web application allowing judges to use their own cloned voice to read passages in real time through text to speech during online proceedings, and organize their documents with a tree view file system
