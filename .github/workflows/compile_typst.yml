@@ -5,8 +5,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
+
     - name: Compile Typst Files
       uses: ammar-ahmed22/compile-typst-action@v2
       with:
         source_paths: 'main.typ'
         output_paths: 'main.pdf'
+
+    - name: Create Release
+      uses: softprops/action-gh-release@v2
+      with:
+        tag_name: pdf-${{ github.sha }}
+        name: PDF Build ${{ github.sha }}
+        files: main.pdf
