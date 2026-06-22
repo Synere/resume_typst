@@ -16,7 +16,7 @@
   linkedin: linkedin,
   phone: phone,
   accent-color: "#26428b",
-  font: "Segoe UI",
+  font: "Droid Sans Mono",
   font-size: 10.70pt,
   paper: "us-letter",
   author-position: left,
