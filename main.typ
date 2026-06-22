@@ -70,7 +70,7 @@
 )
 - Developed a web application allowing judges to use their own cloned voice to read passages in real time through text to speech during online proceedings, and organize their documents with a tree view file system
 - Built with Flask and Piper TTS
-- Is currently in active use by a judge for their online proceedings to streamline their work by allowing them to automate reading passages in their own voice
+- Is currently in active use by a judge for online or in-person proceedings. Usually used for lengthy orders and decisions to streamline their work by allowing them to automate reading passages in their own voice
 
 == Skills
 - *Programming Languages*: Python, JavaScript, Google Apps Script, C/C++, Java, HTML/CSS, TypeScript, SQL, Bash, Rust
