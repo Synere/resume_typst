@@ -17,7 +17,7 @@
   phone: phone,
   accent-color: "#26428b",
   font: "Inter",
-  font-size: 10.70pt,
+  font-size: 10.3pt,
   paper: "us-letter",
   author-position: left,
   personal-info-position: left,
