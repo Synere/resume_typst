@@ -42,7 +42,7 @@
   company: "ERDT - University of the Philippines Diliman",
   dates: dates-helper(start-date: "August 2025", end-date: "January 2026"),
 )
-- Automated post-graduate Faculty Research and Development Grant (FRDG) applications by digitizing document submission, multi-party signatory email notifications, and internal application review processes while adhering to design specifications such as the use of Google Workspace and Google AppSheet for the platform
+- Automated post-graduate FRDG applications by digitizing document submission, multi-party signatory email notifications, and internal application review processes while adhering to design specifications such as the use of Google Workspace and Google AppSheet for the platform
 - Implemented the platform using Google Workspace (Sheets and Forms), Google Apps Script, and Google AppSheet
 - Recently handed over the completed platform to the ERDT office for their use in automating FRDG applications, and possibly other grant applications in the future.
 
