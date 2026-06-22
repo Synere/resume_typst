@@ -10,11 +10,18 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
+    - name: Download Inter Font
+      run: |
+        mkdir fonts
+        wget https://github.com/rsms/inter/releases/download/v4.1/Inter-4.1.zip
+        unzip Inter-4.1.zip -d fonts
+
     - name: Compile Typst Files
       uses: ammar-ahmed22/compile-typst-action@v2
       with:
         source_paths: 'main.typ'
         output_paths: 'main.pdf'
+        fonts_path: 'fonts'
 
     - name: Create Release
       uses: softprops/action-gh-release@v2
