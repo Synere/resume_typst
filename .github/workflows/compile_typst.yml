@@ -20,12 +20,31 @@ jobs:
       uses: ammar-ahmed22/compile-typst-action@v2
       with:
         source_paths: 'main.typ'
-        output_paths: 'main.pdf'
+        output_paths: 'output/main.pdf'
         fonts_path: 'fonts'
+
+    - name: Upload PDF
+      uses: actions/upload-artifact@v3
+      with:
+        path: 'output/main.pdf'
 
     - name: Create Release
       uses: softprops/action-gh-release@v2
       with:
         tag_name: pdf-${{ github.sha }}
         name: PDF Build ${{ github.sha }}
-        files: main.pdf
+        files: output/main.pdf
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+    - name: Download PDF Artifact
+      uses: actions/download-artifact@v3
+      with:
+        name: output/main.pdf
+
+    
