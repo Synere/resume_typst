@@ -25,7 +25,7 @@ jobs:
       uses: ammar-ahmed22/compile-typst-action@v2
       with:
         source_paths: 'main.typ'
-        output_paths: 'output/main.pdf'
+        output_paths: 'output/REGALA_RESUME.pdf'
         fonts_path: 'fonts'
 
     - name: Upload PDF
@@ -38,8 +38,8 @@ jobs:
       uses: softprops/action-gh-release@v2
       with:
         tag_name: pdf-${{ github.sha }}
-        name: PDF Build ${{ github.sha }}
-        files: output/main.pdf
+        name: REGALA_RESUME
+        files: output/REGALA_RESUME.pdf
 
   deploy:
     needs: build
