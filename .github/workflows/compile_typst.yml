@@ -24,9 +24,10 @@ jobs:
         fonts_path: 'fonts'
 
     - name: Upload PDF
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
-        path: 'output/main.pdf'
+        name: 'output_pdf'
+        path: 'output/'
 
     - name: Create Release
       uses: softprops/action-gh-release@v2
@@ -43,8 +44,11 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
     - name: Download PDF Artifact
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4
       with:
-        name: output/main.pdf
+        name: output_pdf
+        path: output/
 
-    
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v5
