@@ -1,6 +1,6 @@
 #import "@preview/basic-resume:0.2.9": *
 
-#let name = "Stanli Ritche L. Regala"
+#let name = "asawa ni krizia eulisse maliwanag"
 #let location = "Quezon City, Philippines"
 #let email = "stanliregala@gmail.com"
 #let github = "github.com/Synere"
