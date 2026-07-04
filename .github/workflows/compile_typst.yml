@@ -28,7 +28,32 @@ jobs:
         output_paths: 'output/REGALA_RESUME.pdf'
         fonts_path: 'fonts'
 
-    - name: Upload PDF
+    - name: Prepare Pages
+      run: |
+        cat > output/index.html << 'EOF'
+          <!DOCTYPE html>
+          <html>
+          <head>
+            <title>Resume</title>
+            <style>
+              html, body {
+                margin: 0;
+                width: 100%;
+                height: 100%;
+              }
+              embed {
+                width: 100%;
+                height: 100%;
+              }
+            </style>
+          </head>
+          <body>
+            <embed src="REGALA_RESUME.pdf" type="application/pdf">
+          </body>
+          </html>
+          EOF
+
+    - name: Upload pages artifact
       uses: actions/upload-pages-artifact@v3
       with:
         name: 'github-pages'
