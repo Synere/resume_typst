@@ -49,6 +49,7 @@ jobs:
           </head>
           <body>
             <embed src="REGALA_RESUME.pdf" type="application/pdf">
+            THIS IS ACTUALLY HTML
           </body>
           </html>
           EOF
