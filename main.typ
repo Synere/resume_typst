@@ -17,7 +17,7 @@
   phone: phone,
   accent-color: "#26428b",
   font: "Inter",
-  font-size: 10.3pt,
+  font-size: 9.5pt,
   paper: "us-letter",
   author-position: left,
   personal-info-position: left,
@@ -32,7 +32,7 @@
   degree: "Bachelor of Science in Computer Engineering",
 )
 - GWA: 1.3672 | Magna Cum Laude
-- Relevant Coursework: Software Engineering and Programming Principles, Computer Networking, Computer Organization and Embedded Systems, Digital Logic Design, Signal and Systems, Integrated Circuit Design, Electric Power Systems, Advanced Circuit Analysis
+- Relevant Coursework: Software Engineering and Programming Principles, Computer Networking, Computer Organization and Embedded Systems, Digital Logic Design
 
 == Work Experience
 
@@ -44,13 +44,20 @@
 )
 - Automated post-graduate FRDG applications by digitizing document submission, multi-party signatory email notifications, and internal application review processes while adhering to design specifications such as the use of Google Workspace and Google AppSheet for the platform
 - Implemented the platform using Google Workspace (Sheets and Forms), Google Apps Script, and Google AppSheet
-- Recently handed over the completed platform to the ERDT office for their use in automating FRDG applications, and possibly other grant applications in the future.
+- Handed over the completed platform to the ERDT office, which now uses it to automate FRDG applications and can extend it to other grant applications
 
 == Projects
 
 #project(
+  name: "Calc-Kulong: Dynamic Judicial Sentencing Assistant",
+)
+- Developed a sentencing calculator for the Revised Penal Code and Special Penal Laws of the Philippines that computes the final penalty and its period ranges from a case configuration, with a step-by-step, citation-bearing audit trail
+- Free offline-capable PWA (client-side computation) plus a paid server-side felony database; built with React, TypeScript, Vite, Hono, PostgreSQL, Drizzle ORM, and Better Auth on Vercel
+- Its legal paper was reviewed and approved by a judge; preparing for public launch
+
+#project(
   name: "LazyJudge",
-  url: "https://github.com/Synere/LazyJudge_0.0.3",
+  url: "github.com/Synere/LazyJudge_0.0.3",
 )
 - Developed a fully customizable modular legal analysis AI LLM pipeline which automates the process of legal research and analysis through document retrieval, summarization, and issue extraction modules
 - Built with Flask, PostgreSQL, FastAPI, LangGraph, and LangChain
@@ -73,6 +80,7 @@
 - Is currently in active use by a judge for online or in-person proceedings. Usually used for lengthy orders and decisions to streamline their work by allowing them to automate reading passages in their own voice
 
 == Skills
-- *Programming Languages*: Python, JavaScript, Google Apps Script, C/C++, Java, HTML/CSS, TypeScript, SQL, Bash, Rust
-- *Frameworks/Libraries*: Flask, FastAPI, LangGraph, LangChain
-- *Technologies*: PostgreSQL, GitHub, Docker, Linux
+- *Programming Languages*: Python, JavaScript, Google Apps Script, C/C++, TypeScript, Java, HTML/CSS, SQL, Bash, Rust
+- *Frameworks/Libraries*: React, Vite, Tailwind CSS, Hono, Drizzle ORM, Flask, FastAPI, LangGraph, LangChain
+- *Technologies*: PostgreSQL, Vercel, GitHub Actions, Docker, Linux
+- *AI Tooling*: Claude Code, Codex, MCP servers, multi-agent coding workflows
