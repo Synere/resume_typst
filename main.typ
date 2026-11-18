@@ -50,6 +50,7 @@
 
 #project(
   name: "Calc-Kulong: Dynamic Judicial Sentencing Assistant",
+  url: "calckulong.vercel.app",
 )
 - Developed a sentencing calculator for the Revised Penal Code and Special Penal Laws of the Philippines that computes the final penalty and its period ranges from a case configuration, with a step-by-step, citation-bearing audit trail
 - Free offline-capable PWA (client-side computation) plus a paid server-side felony database; built with React, TypeScript, Vite, Hono, PostgreSQL, Drizzle ORM, and Better Auth on Vercel
